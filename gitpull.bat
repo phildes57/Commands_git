@@ -7,8 +7,8 @@ echo - le nom de la branche par defaut est "master"
 echo   mais vous pouvez en indiquer une autre en parametre 
 echo _________________________
 if "%1" EQU "?" goto :fin
-rem set "branch=master"
-set "branch=main"
+set "branch=master"
+rem set "branch=main"
 if "%1" EQU "" goto branchok
 set "branch=%1"
 :branchok 

@@ -14,7 +14,7 @@ set "branch=%1"
 set /p val= <  nom_repository.info
 echo etiquette-URL = '%val%' inscrite dans le fichier local : nom_repository.info
 echo on
-git pull %val% %branch%
+git pull %val% %branch% --allow-unrelated-histories
 @echo off
 :fin
 pause
